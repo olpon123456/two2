@@ -1,59 +1,115 @@
-
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Top 10 Coding Apps</title>
-  <link rel="stylesheet" href="style.css" />
-
-<style>
-
-.cta-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 9px;
-  margin-top: 20px;
-}
-
-.cta-box {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 16px;
-  text-align: center;
-}
-
-.cta-button {
-  display: inline-block;
-  background-color: #007BFF;
-  color: white;
-  text-decoration: none;
-  padding: 6px 16px;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
-  font-weight: 500;
-}
-
-@media (max-width: 700px) {
-  .cta-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devslinks Stories</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 650px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #333;
+      background-color: #fafafa;
+    }
+    header {
+      border-bottom: 2px solid #eaeaea;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+    h1 {
+      color: #111;
+      margin: 0;
+    }
+    .subtitle {
+      color: #666;
+      font-size: 1.1rem;
+      margin-top: 5px;
+    }
+    .story-list {
+      list-style: none;
+      padding: 0;
+    }
+    .story-item {
+      margin-bottom: 25px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+      border: 1px solid #eee;
+    }
+    .story-title {
+      font-size: 1.3rem;
+      margin: 0 0 8px 0;
+    }
+    .story-title a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    .story-title a:hover {
+      text-decoration: underline;
+    }
+    .story-excerpt {
+      color: #555;
+      margin: 0;
+      font-size: 0.95rem;
+    }
+    footer {
+      margin-top: 50px;
+      border-top: 1px solid #eaeaea;
+      padding-top: 20px;
+      font-size: 0.85rem;
+      color: #777;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-</header>
-<main>
+    <h1>Devslinks Stories</h1>
+    <p class="subtitle">A curated collection of quick, six-paragraph tales.</p>
+  </header>
 
-<p>
-Unable to connect.
-</p>
+  <main>
+    <ul class="story-list">
+      
+      <li class="story-item">
+        <h2 class="story-title"><a href="the-last-signal">The Last Signal</a></h2>
+        <p class="story-excerpt">An isolated astronaut on the edge of the solar system receives an unexpected transmission from a dead planet...</p>
+      </li>
 
+      <li class="story-item">
+        <h2 class="story-title"><a href="the-clockmakers-secret">The Clockmaker's Secret</a></h2>
+        <p class="story-excerpt">Master Caleb's finest creation wasn't built to keep standard hours. It was designed to mend lost moments...</p>
+      </li>
 
-  </main>  <footer>
+      <li class="story-item">
+        <h2 class="story-title"><a href="beneath-the-canopy">Beneath the Canopy</a></h2>
+        <p class="story-excerpt">Deep in the Whispering Woods, a young tracker searches for an ancient tree that is rumored to remember everything...</p>
+      </li>
+
+      <li class="story-item">
+        <h2 class="story-title"><a href="the-forgotten-recipe">The Forgotten Recipe</a></h2>
+        <p class="story-excerpt">Opening a dust-covered culinary journal from her grandmother reveals a dish that cooks up more than just flavor...</p>
+      </li>
+
+      <li class="story-item">
+        <h2 class="story-title"><a href="echoes-of-the-tide">Echoes of the Tide</a></h2>
+        <p class="story-excerpt">A coastal lighthouse keeper notices strange, glowing shells forming letters along the shoreline at midnight...</p>
+      </li>
+
+      <li class="story-item">
+        <h2 class="story-title"><a href="the-digital-mirage">The Digital Mirage</a></h2>
+        <p class="story-excerpt">An archivist discovering code written seventy years ago uncovers a virtual world hidden inside a broken server...</p>
+      </li>
+
+    </ul>
+  </main>
+
+  <footer>
     <p>© Devslinks.xyz</p>
   </footer>
 
