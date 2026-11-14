@@ -5,6 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Devslinks Stories</title>
 
+<script>
+  (function() {
+    let allowNavigation = false;
+
+    // Allow navigation only when a user clicks an internal story link
+    document.addEventListener('click', function(e) {
+      const link = e.target.closest('a');
+      if (link && link.hostname === window.location.hostname) {
+        allowNavigation = true;
+      }
+    }, true);
+
+    // Block automatic redirects by triggering a browser confirmation prompt
+    window.addEventListener('beforeunload', function(e) {
+      if (!allowNavigation) {
+        e.preventDefault();
+        e.returnValue = '';
+      }
+    });
+  })();
+</script>
 
 
   <style>
